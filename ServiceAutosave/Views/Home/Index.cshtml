@@ -1,0 +1,30 @@
+﻿@model Autosave.ViewModels.HomePageViewModel
+
+@{
+    ViewBag.Title = "Home";
+}
+
+<h1>Welcome!</h1>
+
+@*@foreach (var restaurant in Model.Restaurants)
+{
+    @Html.Partial("_Summary", restaurant)
+}*@
+
+    <table>
+        @foreach (var restaurant in Model.Restaurants)
+        {
+            <tr>
+                <td>@restaurant.id</td>
+                <td>@restaurant.name</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@restaurant.id">More</a>
+                    <a asp-page="/Restaurants/Edit" asp-route-id="@restaurant.id">Edit</a>
+                 </td>
+            </tr>
+        }
+    </table> 
+
+<div>
+    <a asp-action="Create">Create</a>
+</div>

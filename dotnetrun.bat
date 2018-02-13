@@ -1,0 +1,2 @@
+cd ServiceAutosave
+dotnet run

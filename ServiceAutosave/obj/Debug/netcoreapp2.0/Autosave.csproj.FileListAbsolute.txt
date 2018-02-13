@@ -1,0 +1,11 @@
+C:\Dev\ServiceAutosave\ServiceAutosave\bin\Debug\netcoreapp2.0\Autosave.deps.json
+C:\Dev\ServiceAutosave\ServiceAutosave\bin\Debug\netcoreapp2.0\Autosave.runtimeconfig.json
+C:\Dev\ServiceAutosave\ServiceAutosave\bin\Debug\netcoreapp2.0\Autosave.runtimeconfig.dev.json
+C:\Dev\ServiceAutosave\ServiceAutosave\bin\Debug\netcoreapp2.0\Autosave.dll
+C:\Dev\ServiceAutosave\ServiceAutosave\bin\Debug\netcoreapp2.0\Autosave.pdb
+C:\Dev\ServiceAutosave\ServiceAutosave\obj\Debug\netcoreapp2.0\Autosave.csproj.CoreCompileInputs.cache
+C:\Dev\ServiceAutosave\ServiceAutosave\obj\Debug\netcoreapp2.0\Autosave.AssemblyInfoInputs.cache
+C:\Dev\ServiceAutosave\ServiceAutosave\obj\Debug\netcoreapp2.0\Autosave.AssemblyInfo.cs
+C:\Dev\ServiceAutosave\ServiceAutosave\obj\Debug\netcoreapp2.0\Autosave.dll
+C:\Dev\ServiceAutosave\ServiceAutosave\obj\Debug\netcoreapp2.0\Autosave.pdb
+C:\Dev\ServiceAutosave\ServiceAutosave\obj\Debug\netcoreapp2.0\Autosave.csprojResolveAssemblyReference.cache

@@ -1,0 +1,19 @@
+{
+  "commands": {
+    "dotnetbuild": {
+      "fileName": "cmd.exe",
+      "workingDirectory": ".",
+      "arguments": "/c dotnetbuild.bat"
+    },
+    "dotnetrun": {
+      "fileName": "cmd.exe",
+      "workingDirectory": ".",
+      "arguments": "/c dotnetrun.bat"
+    },
+    "dotnetstop": {
+      "fileName": "cmd.exe",
+      "workingDirectory": ".",
+      "arguments": "/c dotnetstop.bat"
+    }
+  }
+}
