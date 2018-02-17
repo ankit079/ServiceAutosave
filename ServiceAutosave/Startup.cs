@@ -58,7 +58,7 @@ namespace Autosave
         private void configureRoutes(IRouteBuilder routeBuilder)
         {
             // Home/Index/4
-            routeBuilder.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
+            routeBuilder.MapRoute("Default", "{controller=Device}/{action=Index}/{id?}");
         }
     }
 }                   

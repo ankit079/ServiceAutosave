@@ -3,14 +3,13 @@
    that can be added to the database (or edited).*/
 
 using Autosave.Models;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Autosave.ViewModels
 {
-    public class DevicePageModel
+    public class DevicePageViewModel
     {
-        [Required, MaxLength(80)]
-        public string name { get; set; }
-        public Device device { get; set; }        
+        public IEnumerable<Device> Devices { get; set; }           
     }
 }

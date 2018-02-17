@@ -10,9 +10,10 @@ using System;
 namespace Autosave.Migrations
 {
     [DbContext(typeof(AutosaveDbContext))]
-    partial class OdeToFoodDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180214124405_Autosave")]
+    partial class Autosave
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

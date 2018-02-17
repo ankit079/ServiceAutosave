@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Autosave.Models
 {
     public class Device
-    {
+    {   [Key]
         public string FunctionalLocationNumber { get; set; }
         public string Description { get; set; }
         [Required, MaxLength(100)]

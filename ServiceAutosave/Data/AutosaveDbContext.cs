@@ -15,6 +15,6 @@ namespace Autosave.Data
         }
 
 
-        public DbSet<Restaurant> Restaurants { get; set; }
+        public DbSet<Device> Devices { get; set; }
     }
 }

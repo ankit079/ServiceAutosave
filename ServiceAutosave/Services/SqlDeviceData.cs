@@ -9,9 +9,9 @@ namespace Autosave.Services
 {
     public class SqlDeviceData : IDeviceData
     {
-        private DeviceDbContext _context;
+        private AutosaveDbContext _context;
 
-        public SqlDeviceData (DeviceDbContext context)
+        public SqlDeviceData (AutosaveDbContext context)
         {
             _context = context;
         }

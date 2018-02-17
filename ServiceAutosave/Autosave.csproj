@@ -5,6 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\HomeController.cs" />
+    <Compile Remove="Migrations\20180109141532_InitialCreate.cs" />
+    <Compile Remove="Migrations\20180109141532_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\OdeToFoodDbContextModelSnapshot.cs" />
+    <Compile Remove="Services\SqlRestaurantData.cs" />
+    <Compile Remove="ViewModels\HomePageViewModel.cs" />
+    <Compile Remove="ViewModels\RestaurantEditModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="Views\Home\Edit.cshtml" />
   </ItemGroup>
 
