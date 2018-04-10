@@ -7,7 +7,7 @@ DECLARE @ParentID int,
 		@ParentName NVARCHAR(50),
 		@SiteFL NVARCHAR(50);
 
-SET @SiteFL = 'W0034513%';
+SET @SiteFL = 'W2000090%';
 
 SET @ParentID = (SELECT RM_Areas.AreaId FROM RM_Areas
 WHERE RM_Areas.Description LIKE @SiteFL);
@@ -30,12 +30,12 @@ SELECT rev.AncNumber AS LatestRevision,
 
 FROM RM_Revisions AS rev
 
-INNER JOIN (SELECT ar.Location, max(StoreDate) as maxdate
+INNER JOIN (SELECT ar.AreaId, max(StoreDate) as maxdate
 			FROM RM_Revisions as rv
 			INNER JOIN RM_Versions as vr ON vr.VersionId = rv.VersionId
 			INNER JOIN RM_Areas as ar ON ar.AreaId = vr.AreaId
 			INNER JOIN RM_FullPaths as fpa ON fpa.AreaId = ar.AreaId
-			GROUP BY ar.Location) tm on  rev.StoreDate = maxdate
+			GROUP BY ar.AreaId) tm on  rev.StoreDate = maxdate
 
 INNER JOIN RM_Versions as ver
 	ON rev.VersionId = ver.VersionId
@@ -54,7 +54,7 @@ INNER JOIN HS_Clients as cl
 
 WHERE a.[ParentAreaId] = @ParentID;
 
--- Display site name in the message
+--Display site name in the message
 
 DECLARE @PrintMessage nvarchar(100);  
 SET @PrintMessage = @ParentName + N' Site Information '  
